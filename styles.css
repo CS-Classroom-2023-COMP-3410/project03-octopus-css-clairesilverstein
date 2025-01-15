@@ -1,0 +1,267 @@
+
+body {
+    background-color: #add8e6; /* Light blue background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Underline Styling */
+.underline {
+    /* Thickness of the line */
+    height: 2px; 
+    /* Light bright blue color */
+    background-color: #87ceeb; 
+    /* I had trouble getting this underline to not go across the whole page but this is where I fixed it */
+    width: 50px; 
+    margin: 5px 0 10px 0;
+}
+
+
+/* Header Styling in the Blue Box */
+#header {
+    /* This is the blue ombre in the heading box */
+    background: linear-gradient(to right, #2f6d95, #4eadd0); 
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+#header h1 {
+    /* I couldn't tell what the exact font was for the headers but adding a serif looked right to me */
+    font-family: "Georgia", serif;
+    font-size: 36px;
+    /* the header appeared to have a drop shadow so that is what this is */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.subheader {
+    font-style: italic;
+    text-align: left;
+    margin: 10px 0 0 20px;
+    font-size: 18px;
+}
+
+/* White Box that most of the content is in */
+.white-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styled Headers */
+/* I was having trouble keeping the headers uniform in color and font so this is where I solved that in CSS */
+.styled-header {
+    font-family: "Georgia", serif;
+    color: #2f6d95;
+    margin: 20px 0 10px;
+}
+
+
+.section-list li {
+    margin-bottom: 10px; 
+}
+
+/* This adds the space between each bullet point that is in the screen shot but not in the original code */
+.facts-list li {
+    margin-bottom: 10px; 
+}
+
+
+/* This is for the highlighted word mantel, this helps organize my code even though only one word is highlighted */
+.highlight-box {
+    background-color: #87ceeb;
+    color: #2f6d95;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+/* Facts List Styling */
+.facts-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.facts-list li::marker {
+    color: #87ceeb;
+}
+
+.facts-list li.dark-blue-text {
+    color: #003366;
+}
+
+/* This makes the linkes the same color as the headers in the white box which is what the screen shot looks like */
+.styled-link {
+    color: #2f6d95; 
+     /* Removes the underline */
+    text-decoration: none;
+}
+
+/* Adds underline on hover */
+.styled-link:hover {
+    text-decoration: underline; 
+}
+
+/* Quiz Box Styling */
+.quiz-box {
+    background-color: #87ceeb;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.quiz-box h2 {
+    font-family: "Georgia", serif;
+    color: #2f6d95;
+    margin-bottom: 10px;
+}
+
+/* Quiz Content Styling */
+.quiz-content {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Quiz Image */
+.quiz-image {
+    width: 50%;
+}
+
+.quiz-image img {
+    border: 4px solid purple;
+    border-radius: 0px;
+    width: 100%;
+    max-width: 150px;
+}
+
+/* Quiz Questions */
+.quiz-questions {
+    width: 50%;
+}
+
+.quiz-questions label {
+    color: #003366;
+    font-weight: bold;
+    display: block;
+}
+
+.quiz-questions input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* submit botton styling */
+.quiz-submit {
+    background-color: #2f6d95;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* The button changes colors when it's hovered over */
+.quiz-submit:hover {
+    background-color: #4eadd0;
+}
+
+/* This is for the normal words that aren't headers */
+section-paragraph {
+    font-size: 16px;
+    line-height: 1.6; 
+    margin-bottom: 15px; 
+}
+
+/* The text doesn't appear to be black but just a very dark blue, this is how I handled not making all the teext dark blue but just the normal non-header words */
+.dark-blue-text {
+    color: #003366; /* Dark blue text color */
+}
+
+
+
+/* Table Styling */
+#species-table {
+    /* needed this to be in a box to be the same width but just made it transparent */
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 0px;
+    margin: 20px auto;
+    /* matches the width of the white box  */
+    width: 90%; 
+    max-width: 1200px; 
+}
+
+
+
+#species-table h2 {
+    color: #003366;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+#species-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+#species-table th {
+    background-color: #a0a0a0; /* Gray header */
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+#species-table td {
+    padding: 10px;
+    color: #003366;
+}
+
+#species-table tr:nth-child(even) {
+    background-color: #e0f7fa; /* Light cyan for even rows */
+}
+
+#species-table tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+/* Footer Styling */
+#footer {
+    background-color: #2f6d95;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto; 
+    width: 90%; 
+    /* Matches the width of the white box */
+    max-width: 1200px; 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#footer p {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+}
